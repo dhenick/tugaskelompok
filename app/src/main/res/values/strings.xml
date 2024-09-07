@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Tugas Kelompok</string>
+    <string name="tk1">TK 1</string>
+    <string name="tk2">TK 2</string>
+    <string name="tk3">TK 3</string>
+    <string name="tk4">TK 4</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tk1_fragment">Ini Untuk TK1</string>
+    <string name="tk2_fragment">Ini Untuk TK2</string>
+    <string name="tk3_fragment">Ini Untuk TK3</string>
+    <string name="tk4_fragment">Ini Untuk TK4</string>
+</resources>

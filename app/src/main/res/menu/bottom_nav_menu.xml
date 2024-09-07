@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/tk1"
+        android:icon="@drawable/ic_task_foreground"
+        android:title="@string/tk1" />
+    <item
+        android:id="@+id/tk2"
+        android:icon="@drawable/ic_task_foreground"
+        android:title="@string/tk2" />
+    <item
+        android:id="@+id/tk3"
+        android:icon="@drawable/ic_task_foreground"
+        android:title="@string/tk3" />
+    <item
+        android:id="@+id/tk4"
+        android:icon="@drawable/ic_task_foreground"
+        android:title="@string/tk4" />
+</menu>
