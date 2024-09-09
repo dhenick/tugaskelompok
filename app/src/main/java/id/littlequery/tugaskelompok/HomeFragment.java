@@ -13,9 +13,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import id.littlequery.tugaskelompok.mvvm.tk_one.FragmentTkOneMvvm;
+
 
 public class HomeFragment extends Fragment {
-    private Button btnMVC,btnMVVM;
 
 
     public HomeFragment() {
@@ -32,7 +33,7 @@ public class HomeFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState){
         super.onViewCreated(view,savedInstanceState);
 
-        btnMVC = getView().findViewById(R.id.mvc);
+        Button btnMVC = getView().findViewById(R.id.mvc);
         btnMVC.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,11 +43,11 @@ public class HomeFragment extends Fragment {
                 fragmentTransaction.replace(R.id.flFragment,fragment).commit();
             }
         });
-        btnMVVM = getView().findViewById(R.id.mvvm);
+        Button btnMVVM = getView().findViewById(R.id.mvvm);
         btnMVVM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment fragment = new MvvmFragment();
+                Fragment fragment = new FragmentTkOneMvvm();
                 FragmentManager fragmentManager = getFragmentManager();
                 FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.flFragment,fragment).commit();
