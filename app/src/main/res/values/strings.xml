@@ -10,4 +10,15 @@
     <string name="tk2_fragment">Ini Untuk TK2</string>
     <string name="tk3_fragment">Ini Untuk TK3</string>
     <string name="tk4_fragment">Ini Untuk TK4</string>
+    <string name="name">Nama</string>
+    <string name="email">Email</string>
+
+    <string name="app_long_name">Aplikasi Tugas Kelompok</string>
+    <string name="prompt_username">Username</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="image_1_desc">Ini adalah gambar Harimau</string>
+    <string name="image_2_desc">Ini adalah gambar Bunglon</string>
+    <string name="image_3_desc">Ini adalah gambar Lamb</string>
 </resources>

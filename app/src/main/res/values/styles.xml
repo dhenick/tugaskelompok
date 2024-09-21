@@ -7,4 +7,13 @@
         <item name="colorAccent">@color/colorAccent</item>
         -->
     </style>
+    <!--designs login_bkogin and register-->
+    <style name="parent">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="modifiedEditText" parent="parent">
+        <item name="android:textSize">@dimen/newsMoreTextSize</item>
+        <item name="android:backgroundTint">@color/primaryTextColor</item>
+    </style>
 </resources>

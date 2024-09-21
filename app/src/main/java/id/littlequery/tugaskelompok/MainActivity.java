@@ -1,5 +1,6 @@
 package id.littlequery.tugaskelompok;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,10 +9,12 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-
+import static id.littlequery.tugaskelompok.SharedPrefManager.SP_NAMA;
+import static id.littlequery.tugaskelompok.SharedPrefManager.SP_SUDAH_LOGIN;
+import static id.littlequery.tugaskelompok.SharedPrefManager.SP_PEGAWAI_APP;
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
     BottomNavigationView bottomNavigationView;
-
+    SharedPreferences sharedPrefManager;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
