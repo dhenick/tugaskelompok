@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--dimes for design 3-->
+    <dimen name="headerTextSize">60sp</dimen>
+    <dimen name="longname">16sp</dimen>
+    <dimen name="newsMoreTextSize">12sp</dimen>
+    <dimen name="loginCardRadius">20dp</dimen>
+    <dimen name="loginViewsMargin">20dp</dimen>
+
+    <dimen name="signup_text_margin_top">10dp</dimen>
+    <dimen name="text_item_title">16sp</dimen>
+    <dimen name="text_secondary">14sp</dimen>
+    <dimen name="text_small">12sp</dimen>
+    <dimen name="radius_button">4dp</dimen>
+    <dimen name="surverCardRadius">5dp</dimen>
+</resources>
