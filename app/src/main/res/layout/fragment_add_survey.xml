@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="80dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambah Data Survey"
+            android:textColor="#43a047"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp" />
+
+        <TextView
+            android:id="@+id/labelNik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIK (15 digit)"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/header"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etNik"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan NIK"
+            android:inputType="number"
+            android:maxLength="15"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@id/labelNik"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/labelNama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama (minimal 3 huruf)"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/etNik"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Nama"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@id/labelNama"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/labelAlamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/etNama"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/etAlamat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Alamat"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@id/labelAlamat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/labelPropinsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Propinsi"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/etAlamat"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Spinner
+            android:id="@+id/spnPropinsi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@id/labelPropinsi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/labelKabupaten"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kabupaten"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/spnPropinsi"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Spinner
+            android:id="@+id/spnKabupaten"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@id/labelKabupaten"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/labelPenghasilan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Penghasilan"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/spnKabupaten"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <RadioGroup
+            android:id="@+id/rgPenghasilan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/spnKabupaten"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="16dp">
+
+            <RadioButton
+                android:id="@+id/rb100rb_1jt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100rb - 1jt" />
+
+            <RadioButton
+                android:id="@+id/rb1jt_2_5jt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1jt - 2.5jt" />
+
+            <RadioButton
+                android:id="@+id/rb2_5jt_4jt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2.5jt - 4jt" />
+
+            <RadioButton
+                android:id="@+id/rbDiatas4jt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Di atas 4jt" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/labelJumlahPenghuni"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jumlah Penghuni (1-5)"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/rgPenghasilan"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <EditText
+            android:id="@+id/etJumlahPenghuni"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Masukkan Jumlah Penghuni"
+            android:inputType="number"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@id/labelJumlahPenghuni"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <TextView
+            android:id="@+id/labelMinat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Minat Subsidi"
+            android:layout_marginStart="16dp"
+            app:layout_constraintTop_toBottomOf="@id/etJumlahPenghuni"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Spinner
+            android:id="@+id/spnMinatSubsidi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@id/labelMinat"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_save"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@id/spnMinatSubsidi"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:backgroundTint="@color/colorPrimary"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_back"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Kembali"
+            android:layout_margin="16dp"
+            app:layout_constraintTop_toBottomOf="@id/button_save"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:backgroundTint="@android:color/holo_red_dark"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
