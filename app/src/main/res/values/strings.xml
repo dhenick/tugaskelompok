@@ -21,4 +21,58 @@
     <string name="image_1_desc">Ini adalah gambar Harimau</string>
     <string name="image_2_desc">Ini adalah gambar Bunglon</string>
     <string name="image_3_desc">Ini adalah gambar Lamb</string>
+<<<<<<< Updated upstream
+=======
+
+    <string-array name="propinsi_array">
+        <item>Jawa Barat</item>
+        <item>Jawa Tengah</item>
+        <item>Jawa Timur</item>
+        <item>DKI Jakarta</item>
+        <item>Bali</item>
+    </string-array>
+
+    <string-array name="kabupaten_propinsi_1">
+        <item>Kabupaten Bandung</item>
+        <item>Kota Bandung</item>
+    </string-array>
+
+    <string-array name="kabupaten_propinsi_2">
+        <item>Kota Semarang</item>
+        <item>Kabupaten Tegal</item>
+        <item>Kabupaten Grobogan</item>
+        <item>Kota Surakarta</item>
+    </string-array>
+    <string-array name="kabupaten_propinsi_3">
+        <item>Kota Surabaya</item>
+        <item>Kabupaten Madiun</item>
+        <item>Kabupaten Malang</item>
+        <item>Kota Malang</item>
+    </string-array>
+    <string-array name="kabupaten_propinsi_4">
+        <item>Kota Administrasi Jakarta Selatan</item>
+        <item>Kota Administrasi Jakarta Barat</item>
+        <item>Kota Administrasi Jakarta Utara</item>
+        <item>Kota Administrasi Jakarta Timur</item>
+        <item>Kota Administrasi Jakarta Pusat</item>
+    </string-array>
+    <string-array name="kabupaten_propinsi_5">
+        <item>Kota Denpasar</item>
+        <item>Kabupaten Bangli</item>
+        <item>Kabupaten Tabanan</item>
+        <item>Kabupaten Badung</item>
+    </string-array>
+
+    <string-array name="kabupaten_default">
+        <item>Pilih kabupaten</item>
+        <item>Kabupaten Tidak Dikenal</item>
+    </string-array>
+
+    <string-array name="minat_subsidi_array">
+        <item>Beli</item>
+        <item>Sewa</item>
+        <item>Membangun sendiri</item>
+    </string-array>
+    <string name="google_logo">Logo Google</string>
+>>>>>>> Stashed changes
 </resources>
